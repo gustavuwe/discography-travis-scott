@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-weight: normal;
+}
+
+body {
+  background-color: #141414;
+  color: #f5f5f5;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.header-navigation ul {
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.initial-page {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.initial-page-container {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+
+  .text-content {
+    h1, span {
+      font-size: 80px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    span {
+      color: #970ff1;
+    }
+
+    p {
+      font-size: 30px;
+      color: #ccc;
+    }
+    
+  }
+
+  img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    filter: brightness(0.8) contrast(1.1);
+  }
+}
+
+.dev-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 10px;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  p {
+    padding-top: 35px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+    max-width: 700px;
+  }
+}
+
+
+footer {
+  margin-top: 140px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(14, 14, 14);
+}

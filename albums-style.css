@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-weight: normal;
+}
+
+body {
+  background-color: #141414;
+  color: #f5f5f5;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.header-navigation ul {
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.section-albums {
+  padding: 100px 50px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.section-albums h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.album-card {
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.album-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+.album-card {
+  max-width: 250px;
+}
+
+.album-card img {
+  max-width: 250px;
+  height: auto;
+}
+
+.album-card h3 {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.album-card p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.songs {
+  margin-top: 50px;
+  text-align: center;
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Poppins;
+  }
+}
+
+.audio-player {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.audio-player audio {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.song-info {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: #666;
+}
+
+.other-pages {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Poppins;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    filter: brightness(0.8) contrast(1.1);
+  }
+
+  .card-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    h2,
+    p,
+    a {
+      text-align: center;
+    }
+
+    a {
+      padding-top: 20px;
+      height: 50%;
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #f1c40f;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 70px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(14, 14, 14);
+}
